@@ -1,0 +1,202 @@
+   /* я знаю, що у мене повторюються кольори color-footer-logo з color-bgr-secondary, а також color-text-title
+   з color-bgr-dark. мені цепоказолося логічним, щоб фон не змішувався з текстом. надіюся, що правильно)) */
+    :root {
+        --color-main-text: #434455;
+        --color-text-title: #2E2F42;
+        --color-accent: #4D5AE5;
+        --color-bgr-secondary: #F4F4FD;
+        --color-bgr-dark: #2E2F42;
+        --color-focus: #404BBF;
+        --color-white: #FFFFFF;
+        --color-footer-text: #E7E9FC;
+        --color-footer-logo: #F4F4FD;
+    }
+body {  
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.02em;
+    color:var(--color-main-text);
+    background-color:var(--color-white);
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+/* -----Header-----*/
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.header-logo-color {
+    line-height: 1.33;
+    color: var(--color-accent);
+}
+.header-logo {
+    line-height: 1.33;
+    color: var(--color-text-title);
+}
+.header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    
+    color: var(--color-text-title);
+}
+.header-link:hover, 
+.header-link:focus,
+.link.current {
+    color: var(--color-accent);
+}
+.address-link {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-main-text);
+    }
+.address-link:hover, .address-link:focus {
+    color: var(--color-accent);    
+}
+
+/* -----Hero----- */
+.hero {
+    background-color: var(--color-bgr-dark);
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    color: var(--color-white);
+}
+.hero-btn {
+    background-color: var(--color-accent);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+}
+.hero-btn:hover, .hero-btn:focus {
+    background-color: var(--color-focus);
+}
+
+/* -----Feature----- */
+.feature-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-text-title);
+}
+.feature-text {
+    font-size: 16px;
+    line-height: 1.5;
+   }
+
+/* ----- Products ------- */
+.products-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+text-transform: capitalize;
+color: var(--color-text-title);
+}
+
+/* -----Our Team----- */
+.team {
+    background-color: var(--color-bgr-secondary);
+}
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color-text-title);
+}
+.team-after-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color-text-title);
+}
+.team-text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* -----Buttons----- */
+.btn {
+    background-color: var(--color-bgr-secondary);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--color-accent);
+    }
+.btn:hover, .btn:focus {
+    background-color: var(--color-focus);
+    color: var(--color-white);
+}
+
+/* -----Gallery----- */
+.picture-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-text-title);
+}
+
+.picture-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* -----Footer----- */
+.footer {
+    background-color: var(--color-bgr-dark);
+}
+.footer-logo {
+    line-height: 1.16;
+    color: var(--color-footer-logo);
+}
+.footer-logo-color {
+    line-height: 1.16;
+    color: var(--color-accent);
+}
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-footer-text);
+}
