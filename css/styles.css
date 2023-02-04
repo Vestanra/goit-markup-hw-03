@@ -74,8 +74,8 @@ img {
     font-size: 18px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 .header-logo-color {
     line-height: 1.33;
@@ -89,7 +89,6 @@ img {
     display: flex;
     gap: 40px;
     margin-left: 76px;
-    margin-right: 332px;
     }
 .header-link {
     display: block;
@@ -109,6 +108,9 @@ img {
     display: flex;
     gap: 40px;
 }
+.address {
+    margin-left: auto;
+}
 .address-link {
     display: block;
     font-family: inherit;
@@ -119,7 +121,7 @@ img {
     color: var(--color-main-text);
     padding-top: 24px;
     padding-bottom: 24px;
-    }
+}
 .address-link:hover, .address-link:focus {
     color: var(--color-accent);    
 }
@@ -241,7 +243,8 @@ img {
     border-top: none;
     border-radius: 0px 0px 4px 4px;
     background-color: var(--color-white);
-    padding: 16px 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 /* -----Buttons----- */
